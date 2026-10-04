@@ -28,6 +28,7 @@ final class ACA_Plugin {
 
 		if ( is_admin() ) {
 			new ACA_Admin_Page();
+			new ACA_Donations();
 		}
 	}
 

@@ -18,8 +18,8 @@ class ACA_Admin_Page {
 
 	public function register_menu() {
 		add_menu_page(
-			__( 'AnderC Admin', 'anderc-custom-admin' ),
-			__( 'AnderC Admin', 'anderc-custom-admin' ),
+			__( 'AC Admin', 'anderc-custom-admin' ),
+			__( 'AC Admin', 'anderc-custom-admin' ),
 			'manage_options',
 			self::SLUG,
 			array( $this, 'render' ),
@@ -83,7 +83,7 @@ class ACA_Admin_Page {
 		$s = ACA_Plugin::get_settings();
 		?>
 		<div class="wrap anderc-wrap">
-			<h1><span class="anderc-badge">AnderC</span> <?php esc_html_e( 'Custom Admin & White Label', 'anderc-custom-admin' ); ?></h1>
+			<h1><span class="anderc-badge">AC</span> <?php esc_html_e( 'Custom Admin & White Label', 'anderc-custom-admin' ); ?></h1>
 
 			<?php if ( isset( $_GET['updated'] ) ) : // phpcs:ignore WordPress.Security.NonceVerification ?>
 				<div class="notice notice-success is-dismissible"><p><?php esc_html_e( 'Ajustes guardados correctamente.', 'anderc-custom-admin' ); ?></p></div>
@@ -137,7 +137,7 @@ class ACA_Admin_Page {
 						<tr>
 							<th scope="row"><label for="footer_text"><?php esc_html_e( 'Texto del pie del admin', 'anderc-custom-admin' ); ?></label></th>
 							<td>
-								<input type="text" class="large-text" id="footer_text" name="footer_text" value="<?php echo esc_attr( $s['footer_text'] ); ?>" placeholder="<?php esc_attr_e( 'Desarrollado por AnderC', 'anderc-custom-admin' ); ?>" />
+								<input type="text" class="large-text" id="footer_text" name="footer_text" value="<?php echo esc_attr( $s['footer_text'] ); ?>" placeholder="<?php esc_attr_e( 'Desarrollado por AC', 'anderc-custom-admin' ); ?>" />
 								<p class="description"><?php esc_html_e( 'Sustituye el texto "Gracias por crear con WordPress".', 'anderc-custom-admin' ); ?></p>
 							</td>
 						</tr>
@@ -153,7 +153,7 @@ class ACA_Admin_Page {
 				</div>
 
 				<div id="tab-menus" class="anderc-tab-panel">
-					<p class="description"><?php esc_html_e( 'Marca los menús que quieras ocultar para cada rol. El menú de AnderC Admin nunca se oculta a los administradores.', 'anderc-custom-admin' ); ?></p>
+					<p class="description"><?php esc_html_e( 'Marca los menús que quieras ocultar para cada rol. El menú de AC Admin nunca se oculta a los administradores.', 'anderc-custom-admin' ); ?></p>
 					<?php $this->render_menu_matrix( $s ); ?>
 				</div>
 

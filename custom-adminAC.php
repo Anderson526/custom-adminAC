@@ -2,7 +2,7 @@
 /*
 Plugin Name:  Custom Admin & White Label - toolkitAC
 Plugin URI: https://anderson526.github.io/portfolio-profesional/
-Description: Personaliza la pantalla de acceso, aplica marca blanca al escritorio y oculta menús del administrador según el rol. Parte de la suite AnderC Essential.
+Description: Personaliza la pantalla de acceso, aplica marca blanca al escritorio y oculta menús del administrador según el rol. Parte de la suite AC Essential.
 Version: 1.0.0
 Author: Anderson Chila
 Author URI: https://anderson526.github.io/portfolio-profesional/
